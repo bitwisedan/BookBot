@@ -7,3 +7,6 @@ def num_of_characters(text):
         if char in letters:
             letters[char] += 1
     return letters
+def sort_on(letters):
+    pass
+        
