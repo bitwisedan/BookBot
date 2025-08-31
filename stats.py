@@ -8,6 +8,8 @@ def num_of_characters(text):
             letters[char] += 1
     return letters
 def sort_on(letters):
-    pass
+    
+    letters.sort(reverse=True,key=sort_on)
+    print(letters)
     #needed a commit
         

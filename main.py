@@ -1,5 +1,7 @@
 from stats import num_of_words
 from stats import num_of_characters
+from stats import sort_on
+
 def get_book_text(filepath):
     with open(filepath) as file:
         return file.read()
