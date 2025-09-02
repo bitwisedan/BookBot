@@ -8,8 +8,11 @@ def num_of_characters(text):
             letters[char] += 1
     return letters
 def sort_on(letters):
-    
-    letters.sort(reverse=True,key=sort_on)
-    print(letters)
-    #needed a commit
+    sorted_list = []
+    for letter in letters:
+        sorted_list.append((letter, letters[letter]))
+    sorted_list.sort(reverse=True, key=lambda x: x[1])
+    return sorted_list
+        
+
         
